@@ -5,7 +5,7 @@
     <title>TailWind CSS</title>
     <link rel="stylesheet" href="compiled.css" />
   </head>
-  <body class="text-gray-600 font-nunitop dark:bg-gray-800 dark:text-white">
+  <body class="text-gray-600 font-nunitop dark:bg-gray-800 dark:text-white transition ease-out duration-1000">
     <div class="grid md:grid-cols-4">
       <div class="md:col-span-1 md:flex md:justify-end">
         <nav class="text-right">
@@ -94,11 +94,21 @@
       </div>
 
       <main
-        class="px-16 py-6 bg-gray-100 md:col-span-3 dark:bg-gray-900 dark:text-white"
+        class="px-16 py-6 bg-gray-100 md:col-span-3 dark:bg-gray-900 dark:text-white transition ease-out duration-1000"
       >
         <div
           class="flex justify-center text-base md:justify-end md:text-lg items-center"
         >
+        <div id="dark-container">
+ <svg 
+        id="dark" 
+        class = 'mr-3 cursor-pointer text-primary transform hover:scale-110 transition ease-out duration-500'
+        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+          <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+        </svg>
+        </div>
+       
           <a
             href="#"
             class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
@@ -109,22 +119,7 @@
             class="text-primary ml-3 btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
             >Sign up</a
           >
-          <div class="w-5 relative" id="dark">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="pl-3 cursor-pointer transform scale-110 hover:scale-150 transition ease-in duration-300 cursor-pointe text-primary"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-              />
-            </svg>
-          </div>
+                 
         </div>
 
         <header>

@@ -5,24 +5,16 @@ document.querySelector("#burger").addEventListener("click", () => {
 
 const dark = document.querySelector("#dark");
 dark.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
   document.documentElement.classList.contains("dark")
-    ? localStorage.setItem("mode", "light")
-    : localStorage.setItem("mode", "dark");
-  if (localStorage.getItem("mode") === "dark") {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
+    ? localStorage.setItem("mode", "dark")
+    : localStorage.setItem("mode", "light");
 });
 
 //check for mode on page load and apply it.
 if (localStorage.getItem("mode") === "dark") {
   document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
 }
-
-//darkmode shortcut
 
 document.body.onkeydown = (eve) => {
   if (eve.code === "KeyD") {
